@@ -3,7 +3,9 @@ import "../footer/footer.scss"
 function Footer () {
     return(
         <div className="myFooter">
-            dasd
+            <div className="Content">
+                <strong>Kontakt: norbertskulski@wp.pl </strong>
+            </div>
         </div>
     )
 }

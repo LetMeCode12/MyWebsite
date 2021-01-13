@@ -1,0 +1,22 @@
+.Describer {
+    background:linear-gradient(to right,rgba(0, 174, 255, 0.3),rgba(0, 174, 255, 1));
+    overflow-wrap: anywhere;
+    display: flex;
+    position: relative;
+    .Content{
+      flex: auto;
+      padding: 2rem;
+      width: 50%;
+    }
+    #BG {
+      background: url(../../Graphics/city.jpg);
+      background-size: cover;
+      background-blend-mode: luminosity;
+      background-attachment: fixed;
+      background-position: center;
+      background-color:rgba(0, 174, 255, .3);
+      clip-path: polygon(100% 9%, 100% 0%, 100% 100%, 29% 100%);
+      position: relative;
+      flex:50% 0 0;
+    }
+  }

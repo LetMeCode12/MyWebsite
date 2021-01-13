@@ -1,8 +1,9 @@
 import React from 'react'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import {withRouter} from "react-router-dom";
 import "../navBar/myNavBar.scss"
 
-function MyNavBar() {
+function MyNavBar(props) {
     return (
         <div className="myNavBar">
         <Navbar bg="dark" expand="lg" variant="dark">
@@ -10,12 +11,12 @@ function MyNavBar() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link >Strona główna</Nav.Link>
+                    <Nav.Link onClick={()=>props.history.push("/")} >Strona główna</Nav.Link>
                    
                     <NavDropdown title="Technologie" id="basic-nav-dropdown">
-                        <NavDropdown.Item >Front-End</NavDropdown.Item>
+                        <NavDropdown.Item onClick={()=>props.history.push("/FrontEnd")} >Front-End</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item >Back-End</NavDropdown.Item>
+                        <NavDropdown.Item onClick={()=>props.history.push("/BackEnd")} >Back-End</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
@@ -24,4 +25,4 @@ function MyNavBar() {
     )
 }
 
-export default MyNavBar
+export default withRouter(MyNavBar)

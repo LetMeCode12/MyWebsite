@@ -1,8 +1,14 @@
 .myFooter{
     background: black;
     color: white;
-    height: 4rem;
     display: flex;
+    box-sizing: border-box;
+    padding: 1rem;
+    justify-content: flex-end;
     position: relative;
     align-items: center;
+    height: 5vh;
+    .Content{
+        font-size: 21px;
+    }
 }
