@@ -1,40 +1,44 @@
-.sliderImage{
+.sliderImage {
     height: 40vh;
     display: flex;
     overflow: hidden;
-    position: relative;   
+    position: relative;
     margin: 0 auto;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 
-    .innerSlider{
+    .innerSlider {
         display: flex;
-        left:0;
+        left: 0;
         position: relative;
-        transition: left 1s ease;     
+        transition: left 1s ease;
     }
-    .myImage{
-        width: 100vw;
-        display: flex;        
-    } 
-    .next,.prev{
+    .myImage {
+        width: 60vw;
+        margin: 1rem 20vw;
+    }
+    .next,
+    .prev {
         position: absolute;
         z-index: 999;
-        background-color: rgba(255,255,255,.2);
+        background-color: rgba(255, 255, 255, 0.2);
         height: 100%;
         align-items: center;
         display: flex;
-        &:hover{
-            background-color: rgba(255,255,255,.6);
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.6);
         }
-        padding: 0 .3rem;
+        padding: 0 0.3rem;
     }
-    .next{
-        right:0;
+    .next {
+        right: 0;
     }
-    .prev{
-        
+    .prev {
         left: 0;
     }
 }
-
-
-

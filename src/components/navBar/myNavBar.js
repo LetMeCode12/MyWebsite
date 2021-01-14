@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import {withRouter} from "react-router-dom";
 import "../navBar/myNavBar.scss"
+import Underline from '../underline/underline';
 
 function MyNavBar(props) {
     return (
@@ -11,9 +12,9 @@ function MyNavBar(props) {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link onClick={()=>props.history.push("/")} >Strona główna</Nav.Link>
+                    <Nav.Link onClick={()=>props.history.push("/")} ><Underline>Strona główna</Underline></Nav.Link>
                    
-                    <NavDropdown title="Technologie" id="basic-nav-dropdown">
+                    <NavDropdown title={<Underline>Technologie</Underline>} className="dropDown" id="basic-nav-dropdown">
                         <NavDropdown.Item onClick={()=>props.history.push("/FrontEnd")} >Front-End</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item onClick={()=>props.history.push("/BackEnd")} >Back-End</NavDropdown.Item>

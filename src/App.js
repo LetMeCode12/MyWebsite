@@ -11,6 +11,12 @@ import {
 } from "react-router-dom";
 import NotFound from './containers/notFound/notFound';
 import BackEnd from './containers/backEnd/backEnd';
+import ExpressjsLogo from "./Graphics/sliderImages/ExpressjsLogo.png"
+import awsLogo from "./Graphics/sliderImages/awsLogo.png"
+import Reactlogo from "./Graphics/sliderImages/Reactlogo.png"
+import SpringBootLogo from "./Graphics/sliderImages/SpringBootLogo.png"
+import FrontEnd from './containers/frontEnd/frontEnd';
+import 'aos/dist/aos.css'
 
 function App() {
   return (
@@ -18,7 +24,7 @@ function App() {
       <div className="App">
 
         <MyNavBar />
-        <SliderImage imagesPath={["https://www.download.net.pl/upload/NewsSeptember2017/google-pokaz-obraz/google-pokaz-obraz.jpg", "https://www.widzialni.pl/blog/wp-content/uploads/2017/10/google-grafika.jpg", "https://www.tapeciarnia.pl/tapety/normalne/224019_grafika_komputerowa_kwiaty.jpg"]} />
+        <SliderImage imagesPath={[Reactlogo,SpringBootLogo,awsLogo,ExpressjsLogo]} />
         <div className="myMain">
           <Switch>
             <Redirect exact
@@ -27,6 +33,7 @@ function App() {
               />
             <Route exact path="/Home" component={(props) => <Describer {...props} />}/>
             <Route path="/BackEnd" component={(props) => <BackEnd {...props} />}/>
+            <Route path="/FrontEnd" component={(props) => <FrontEnd {...props} />}/>
             <Route component={(props) => <NotFound {...props} />}/>
 
           </Switch>

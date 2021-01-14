@@ -1,7 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
 .App {
+  font-family: 'Josefin Sans', sans-serif;
   display: block;
   .myMain > div{
-    min-height: 49.2vh;
+    min-height: 48.8vh;
+  }
+
+  .Content{
+    font-size: xx-large;
+    font-weight: 600;
   }
 }

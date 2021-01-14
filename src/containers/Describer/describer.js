@@ -6,9 +6,8 @@ class Describer extends Component {
         return (
             <div className="Describer">
                 <div className="Content">
-                    hello                    
+                    hello     
                 </div>
-                <div id="BG"></div>
             </div>
 
         )
