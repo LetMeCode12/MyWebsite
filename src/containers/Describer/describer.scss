@@ -7,6 +7,9 @@
       padding: 2rem;
       position: relative;
       width: 100%;
+      p{
+        margin: 0;
+      }
      
       &::before{
         content: " ";
@@ -21,7 +24,14 @@
         clip-path: polygon(100% 9%, 100% 0%, 100% 100%, 29% 100%);
         position: absolute;
         right: 0;
-      }      
+      } 
+
+      .UtpLogo{
+        height: 100px;
+        width: 100px;
+        margin: 0 1rem;
+        position: absolute;
+      }   
     }
 
     

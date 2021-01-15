@@ -18,6 +18,8 @@ function MyNavBar(props) {
                         <NavDropdown.Item onClick={()=>props.history.push("/FrontEnd")} >Front-End</NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item onClick={()=>props.history.push("/BackEnd")} >Back-End</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item onClick={()=>props.history.push("/Tests")} >Testy</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>

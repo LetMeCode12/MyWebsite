@@ -15,6 +15,7 @@ import ExpressjsLogo from "./Graphics/sliderImages/ExpressjsLogo.png"
 import awsLogo from "./Graphics/sliderImages/awsLogo.png"
 import Reactlogo from "./Graphics/sliderImages/Reactlogo.png"
 import SpringBootLogo from "./Graphics/sliderImages/SpringBootLogo.png"
+import Reduxlogo from "./Graphics/sliderImages/Reduxlogo.png"
 import FrontEnd from './containers/frontEnd/frontEnd';
 import 'aos/dist/aos.css'
 
@@ -24,7 +25,7 @@ function App() {
       <div className="App">
 
         <MyNavBar />
-        <SliderImage imagesPath={[Reactlogo,SpringBootLogo,awsLogo,ExpressjsLogo]} />
+        <SliderImage imagesPath={[Reactlogo,Reduxlogo,SpringBootLogo,awsLogo,ExpressjsLogo]} />
         <div className="myMain">
           <Switch>
             <Redirect exact
