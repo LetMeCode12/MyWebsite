@@ -9,6 +9,8 @@
       width: 100%;
       p{
         margin: 0;
+        width: 92%;
+        white-space: pre-wrap;
       }
      
       &::before{
@@ -29,8 +31,10 @@
       .UtpLogo{
         height: 100px;
         width: 100px;
-        margin: 0 1rem;
+        margin: 0 ;
         position: absolute;
+        right: 2rem;
+        top:0.5rem;
       }   
     }
 
