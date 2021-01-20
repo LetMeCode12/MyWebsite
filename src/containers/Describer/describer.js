@@ -15,7 +15,7 @@ class Describer extends Component {
     return (
       <div className="Describer">
         <div className="Content">
-          <p>Witam na mojej stronie. Nazywam sie Norbert, ukończyłem pierwszy stopień na Uniwersytecie Technologiczno-Przyrodniczy im. Jana i Jędrzeja Śniadeckich w Bydgoszczy.</p><img className="UtpLogo" data-aos="fade-left" src={utp} />
+          <p><img className="UtpLogo" data-aos="fade-left" src={utp} />Witam na mojej stronie. Nazywam sie Norbert, ukończyłem pierwszy stopień na Uniwersytecie Technologiczno-Przyrodniczy im. Jana i Jędrzeja Śniadeckich w Bydgoszczy. Przez dwa lata zajmowałem stanowisko frontend developera pracując z biblioteka React. Zajmowałem się między innymi wprowadzaniem nowych funkcionalności, poprawianiem błędów, testowaniem unit z wykorzystaniem mocha.js oraz e2e przy urzyciu cypress.io.</p>
         </div>
       </div>
 

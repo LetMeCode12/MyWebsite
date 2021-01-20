@@ -6,8 +6,7 @@ import Underline from '../underline/underline';
 
 function MyNavBar(props) {
     return (
-        <div className="myNavBar">
-        <Navbar bg="dark" expand="lg" variant="dark">
+        <Navbar className="myNavBar" bg="dark" expand="lg" variant="dark">
             <Navbar.Brand >Witaj</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -15,16 +14,15 @@ function MyNavBar(props) {
                     <Nav.Link onClick={()=>props.history.push("/")} ><Underline>Strona główna</Underline></Nav.Link>
                    
                     <NavDropdown title={<Underline>Technologie</Underline>} className="dropDown" id="basic-nav-dropdown">
-                        <NavDropdown.Item onClick={()=>props.history.push("/FrontEnd")} >Front-End</NavDropdown.Item>
+                        <NavDropdown.Item onClick={()=>props.history.push("/FrontEnd")} ><Underline>Front-End</Underline></NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item onClick={()=>props.history.push("/BackEnd")} >Back-End</NavDropdown.Item>
+                        <NavDropdown.Item onClick={()=>props.history.push("/BackEnd")} ><Underline>Back-End</Underline></NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item onClick={()=>props.history.push("/Tests")} >Testy</NavDropdown.Item>
+                        <NavDropdown.Item onClick={()=>props.history.push("/Tests")} ><Underline>Testy</Underline></NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-        </div>
     )
 }
 

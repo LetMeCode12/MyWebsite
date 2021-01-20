@@ -1,9 +1,26 @@
+$bgColor :black;
+$txColor : white;
+$hbgColor: gray;
 .myNavBar{
+    *{
+        color: $txColor;
+    }
     position: sticky;
     top:0;
     z-index: 9999;
     font-family: normal !important;
     font-size: larger;
+    background-color: $bgColor !important;
+    .dropdown-menu {
+        background-color: $bgColor !important; 
+        width: min-content;
+        .dropdown-item,.dropdown-item:hover{
+            background-color: $bgColor !important; 
+            color: $txColor !important;
+            width: min-content;
+        }
+    }
+    
 
     .dropDown > a{
         display: flex !important;
