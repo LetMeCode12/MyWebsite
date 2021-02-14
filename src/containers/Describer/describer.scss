@@ -7,6 +7,7 @@
       padding: 2rem;
       position: relative;
       width: 100%;
+      z-index: 999;
       p{
         margin: 0;
         white-space: pre-wrap;
@@ -38,6 +39,13 @@
       }   
     }
 
+    @media only screen and (max-width: 1100px) {
+      .Content{
+        p{
+          width: 80%;
+        }
+      }
+    }
     
     
   }
