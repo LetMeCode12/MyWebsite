@@ -20,12 +20,13 @@
         background: url(../../Graphics/city.jpg);
         background-size: cover;
         background-blend-mode: luminosity;
-        background-attachment: fixed;
+        background-attachment:fixed;
         background-position: center;
         background-color:rgba(0, 174, 255, .3);
         clip-path: polygon(100% 9%, 100% 0%, 100% 100%, 29% 100%);
         position: absolute;
         right: 0;
+        z-index: 1;
       } 
 
       .UtpLogo{
