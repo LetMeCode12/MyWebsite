@@ -4,11 +4,26 @@
   font-family: 'Josefin Sans', sans-serif;
   display: block;
   .myMain > div{
-    min-height: 48.8vh;
+    min-height: 44.99vh;
   }
 
   .Content{
     font-size: x-large;
     font-weight: 600;
+  }
+}
+
+.TextArea{
+  display: flex;
+  margin: 1rem 0;
+  img{
+    max-width: 30%;
+    max-height: 450px;
+    margin:  0 1rem;
+  }
+  p{
+    margin:  0 1rem;
+    max-width: 60%;
+    word-wrap: break-word;
   }
 }

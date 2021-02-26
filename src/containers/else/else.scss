@@ -1,0 +1,19 @@
+.Else{
+    background: url(../../Graphics/city.jpg);
+    background-size: cover;
+    background-blend-mode: luminosity;
+    background-attachment: fixed;
+    background-position: center;
+    background-color:rgba(0, 174, 255, .3);
+    display: flex;
+    justify-content: center;
+    .Content{
+        background-color: white;
+        padding: 1rem 2rem;
+        margin: 2rem;
+        border: black 1px solid;
+        border-radius: 20px;
+        width: 80%;
+        box-shadow: black 0 0 20px;
+    }
+}

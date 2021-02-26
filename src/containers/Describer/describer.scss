@@ -1,5 +1,5 @@
 .Describer {
-    background:linear-gradient(to right,rgba(0, 174, 255, 0.3),rgba(0, 174, 255, 1));
+    background:linear-gradient(to left,rgba(99, 209, 252, 0.521),rgba(0, 174, 255, 1));
     overflow-wrap: anywhere;
     display: flex;
     position: relative;
@@ -7,7 +7,6 @@
       padding: 2rem;
       position: relative;
       width: 100%;
-      z-index: 999;
       p{
         margin: 0;
         white-space: pre-wrap;
@@ -26,15 +25,15 @@
         clip-path: polygon(100% 9%, 100% 0%, 100% 100%, 29% 100%);
         position: absolute;
         right: 0;
-        z-index: 1;
+        z-index: -1;
       } 
 
       .UtpLogo{
         height: 100px;
         width: 100px;
-        margin: 0 ;
+        margin: 0 0  0 2rem ;
         position: relative;
-        right: 2rem;
+        right: 3rem;
         float: right;
         top:0;
       }   

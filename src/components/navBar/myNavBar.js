@@ -19,6 +19,8 @@ function MyNavBar(props) {
                         <NavDropdown.Item onClick={()=>props.history.push("/BackEnd")} ><Underline>Back-End</Underline></NavDropdown.Item>
                         <NavDropdown.Divider />
                         <NavDropdown.Item onClick={()=>props.history.push("/Tests")} ><Underline>Testy</Underline></NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item onClick={()=>props.history.push("/Else")} ><Underline>Pozostałe technologie</Underline></NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>

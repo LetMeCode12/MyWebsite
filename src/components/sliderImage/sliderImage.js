@@ -46,8 +46,6 @@ function SliderImage({ imagesPath }) {
 
     React.useEffect(() => {
         console.log("Images:", imagesPath)
-
-
     })
 
     const renderImage = (e, index) => {
