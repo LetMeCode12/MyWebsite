@@ -1,6 +1,6 @@
-$bgColor: black;
+$bgColor: linear-gradient(to left,rgba(99, 209, 252, 0.521),rgba(0, 174, 255, 1));
 $txColor: white;
-$hbgColor: rgb(49, 49, 49);
+$hbgColor: rgb(0, 150, 219);
 .myNavBar {
     * {
         color: $txColor;
@@ -11,14 +11,14 @@ $hbgColor: rgb(49, 49, 49);
     font-family: normal !important;
     font-size: larger;
     height: 6vh;
-    background-color: $bgColor !important;
+    background: $bgColor !important;
     .dropdown-menu {
-        background-color: $bgColor !important;
+        background: $bgColor !important;
 
         .dropdown-item {
             color: $txColor !important;
             &:hover {
-                background-color: $hbgColor !important;
+                background: $hbgColor !important;
                 .Underline {
                     width: min-content;
                 }
