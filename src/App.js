@@ -21,6 +21,9 @@ import 'aos/dist/aos.css'
 import Tests from './containers/tests/tests';
 import Else from './containers/else/else';
 import Aos from "aos";
+import RightNav from './components/rightNav/rightNav';
+import MailModal from './components/mailModal/mailModal';
+import { useEffect, useRef, useState } from 'react';
 
 function App() {
 
@@ -29,6 +32,23 @@ function App() {
     delay:300,
     offset:300
   })
+
+  const [modalShow,setModalShow] = useState(false);
+
+  
+
+  const onHide=()=>{
+    setModalShow(false)
+  };
+
+  const onShow=()=>{
+    setModalShow(true);
+  }
+    
+  useEffect(()=>{
+    console.log("weszło")
+    
+  },[modalShow])
   
   return (
     <Router>
@@ -52,6 +72,8 @@ function App() {
           </Switch>
         </div>
         <Footer />
+        <RightNav onShow={onShow}/>
+        <MailModal show={modalShow} Hide={onHide} />
       </div>
     </Router>
   );

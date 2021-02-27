@@ -1,6 +1,8 @@
 .Modal{
     position: absolute;
-    background-color:blue ;
+    background-color:white ;
+    border: solid 1px black;
+    box-shadow: 0 0 20px black;
     top:50%;
     left:50%;
     z-index: 999999;

@@ -1,0 +1,21 @@
+.MyTestArea{
+    margin: .5rem auto;
+    width: 80%;
+   
+    
+    textarea{
+       border-radius: 0px;
+       min-height: 200px;
+       max-height: 400px;
+       border: rgb(0, 183, 255) solid 1px;
+       &.Error{
+        border: red solid 1px;
+       }
+        
+    }
+    .Error{
+        color: red;
+        display: flex;
+        justify-content: center;
+    }
+}

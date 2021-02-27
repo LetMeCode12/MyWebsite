@@ -1,14 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import "./sliderImage.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-function SliderImage({ imagesPath }) {
+function SliderImage({ imagesPath}) {
 
     const mySlider = useRef();
+    let changeSlide = undefined;
 
-    let cnt = 0;
     const leng = imagesPath.length;
+    let cnt = +mySlider.current?.style?.left.slice(1,2) || 0; 
+      
 
     const moveImages = () => {
         if (cnt >= leng) {
@@ -21,7 +23,16 @@ function SliderImage({ imagesPath }) {
         
     }
 
-    let changeSlide = setInterval(moveImages, 5000)
+    useEffect(()=>{
+                
+      
+       
+       console.log("XD",mySlider.current.style.left.slice(1,2))
+       changeSlide = setInterval(moveImages, 5000)
+
+       return () => {  clearInterval(changeSlide)}
+   
+    })
 
     const onNextImage = () => {
         clearInterval(changeSlide)
