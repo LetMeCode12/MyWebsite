@@ -7,6 +7,13 @@
       padding: 2rem;
       position: relative;
       width: 100%;
+      div{
+        background: rgba(255,255,255,.9);
+        padding: 1rem;
+        border: black 1px solid;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+      }
       p{
         margin: 0;
         white-space: pre-wrap;
@@ -31,9 +38,9 @@
       .UtpLogo{
         height: 100px;
         width: 100px;
-        margin: 0 0  0 2rem ;
+        margin: 0 1rem;
         position: relative;
-        right: 3rem;
+        right: 0;
         float: right;
         top:0;
       }   

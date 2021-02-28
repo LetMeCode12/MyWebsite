@@ -6,7 +6,7 @@ export const submit = (values,props) => {
 
     const {email,content}=values;
 
-    sendEmail(email,content);
+    sendEmail({email,content});
     
     props.Hide();
 
@@ -36,5 +36,12 @@ function validateEmail(email) {
 }
 
 const sendEmail=({email="",content=""}={})=>{
-    
+    console.log("Data:",JSON.stringify({email,content}))
+    fetch(`http://${process.env.REACT_APP_API_URL}/sendMail`,{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json"
+        },
+        body:JSON.stringify({email,content})
+    })
 }

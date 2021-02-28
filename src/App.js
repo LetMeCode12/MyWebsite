@@ -25,6 +25,8 @@ import RightNav from './components/rightNav/rightNav';
 import MailModal from './components/mailModal/mailModal';
 import { useEffect, useRef, useState } from 'react';
 
+
+
 function App() {
 
   Aos.init({

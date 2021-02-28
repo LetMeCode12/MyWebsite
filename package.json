@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^12.6.0",
     "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
+    "dotenv": "^8.2.0",
     "formik": "^2.2.6",
     "jquery": "^3.5.1",
     "lodash": "^4.17.20",
