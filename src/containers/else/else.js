@@ -8,8 +8,8 @@ export default function Else() {
     return (
         <div className="Else">
             <div className="Content">
-                <div className="TextArea"><img src={logoGit} data-aos-offset="200"  data-aos="flip-right"/><p data-aos="fade-left">React jest to biblioteka JavaScript. Stworzona przez zespół Facebook, jest wykorzystywana do tworzenia interfejsów graficznych aplikacji internetowych. Z biblioteką React pracuje od około dwóch lat, wykorzystywałem ją zarówno w projektach uczelnianych jak również w pracy.  </p></div>
-                <div className="TextArea"><p data-aos="fade-right" >Redux jest to biblioteka JavaScript służąca do zarządzania stanem aplikacji. Dzieki wykorzystaniu biblioteki Redux możemy wykorzystać biblioteki takie jak redux-modal czy redux-form. Biblioteke Redux wraz z React od około dwóch lat wykorzystywałem w projektach uczelnianych oraz w pracy.   </p><img src={logoDocker} data-aos="flip-left"/></div>
+                <div className="TextArea"><img src={logoGit} data-aos-offset="200"  data-aos="flip-right"/><p data-aos="fade-left">Git to system kontroli wersji. Wykorzystywany był przezemnie za równo w pracy jak i w zastosowaniu uczelnianym do pracowania grupowego nad projektami lub przechowywania prajektów. Urzywałem zarówno Githuba jak i CodeCommit od AWS. </p></div>
+                <div className="TextArea"><p data-aos="fade-right" >Docker to narzędzie służące do tworzenia, wdrażania oraz uruchamiania aplikcaji rozproszonych. Wykorzystywałem je głównie do wdrażania aplikacji na serverach VPS za pomocą DockerHub.</p><img src={logoDocker} data-aos="flip-left"/></div>
             </div>
         </div>
     )
