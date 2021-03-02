@@ -24,16 +24,19 @@ import Aos from "aos";
 import RightNav from './components/rightNav/rightNav';
 import MailModal from './components/mailModal/mailModal';
 import { useEffect, useRef, useState } from 'react';
+import {NotificationContainer} from 'react-notifications';
 
 
 
 function App() {
 
-  Aos.init({
-    duration:1000,
-    delay:300,
-    offset:300
+  useEffect(()=>{
+    Aos.init({
+      offset:250,
+      duration:1000
+    })
   })
+  
 
   const [modalShow,setModalShow] = useState(false);
 
@@ -46,12 +49,7 @@ function App() {
   const onShow=()=>{
     setModalShow(true);
   }
-    
-  useEffect(()=>{
-    console.log("weszło")
-    
-  },[modalShow])
-  
+      
   return (
     <Router>
       <div className="App">
@@ -77,6 +75,7 @@ function App() {
         <RightNav onShow={onShow}/>
         <MailModal show={modalShow} Hide={onHide} />
       </div>
+      <NotificationContainer/>
     </Router>
   );
 }

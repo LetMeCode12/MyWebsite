@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'react-notifications/lib/notifications.css';
+
 
 require('dotenv').config();
 

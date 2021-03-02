@@ -3,21 +3,29 @@
     overflow-wrap: anywhere;
     display: flex;
     position: relative;
+    align-items: center;
     .Content{
       padding: 2rem;
       position: relative;
       width: 100%;
+      
       div{
         background: rgba(255,255,255,.9);
-        padding: 1rem;
+        padding: 4vh 1rem ;
         border: black 1px solid;
         border-radius: 10px;
         box-shadow: 0 0 10px black;
+        height: 100%;
+        
+        p:nth-child(1){
+          text-indent: 50px;
+        }
       }
       p{
         margin: 0;
         white-space: pre-wrap;
       }
+     
      
       &::before{
         content: " ";

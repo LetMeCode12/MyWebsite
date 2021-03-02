@@ -2,10 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
 .App {
   font-family: 'Josefin Sans', sans-serif;
-  display: block;
-  .myMain > div{
-    min-height: 44.99vh;
+  display: flex;
+  flex-direction: column;
+
+  .myMain {
+     flex:1;
+     &>div{
+       height: 100%;
+     }
   }
+
+  .sliderImage{
+    flex:1 0 40vh;
+  }
+
+  
 
   .Content{
     font-size: x-large;
@@ -16,14 +27,16 @@
 .TextArea{
   display: flex;
   margin: 1rem 0;
+  align-items: center;
   img{
-    max-width: 30%;
-    max-height: 450px;
+    max-height: 200px;
+    max-width: 40%;
+    // width: 30vw;
     margin:  0 1rem;
   }
   p{
     margin:  0 1rem;
-    max-width: 60%;
+    text-indent: 50px;
     word-wrap: break-word;
   }
 }

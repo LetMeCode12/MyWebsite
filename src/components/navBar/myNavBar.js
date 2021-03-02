@@ -3,11 +3,12 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import {withRouter} from "react-router-dom";
 import "../navBar/myNavBar.scss"
 import Underline from '../underline/underline';
+import Logo from "../../Graphics/utp.png"
 
 function MyNavBar(props) {
     return (
         <Navbar className="myNavBar" bg="dark" expand="lg" variant="dark">
-            <Navbar.Brand >Witaj</Navbar.Brand>
+            <Navbar.Brand ><div className="Title"><img className="Logo" src={Logo}/>Witaj</div></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">

@@ -13,7 +13,7 @@ export default function EmailForm(props) {
 
        >
            <Form id="EmailForm">
-               <Field name="email" component={MyInput} placeholder="Prosze o podanie email"/>
+               <Field name="email" component={MyInput} placeholder="Email zwrotny"/>
                <Field name="content" component={MyTestArea} placeholder="Wpisz tutaj treść wiadomości"/>
            </Form>
        </Formik>

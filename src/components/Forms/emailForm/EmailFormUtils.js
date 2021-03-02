@@ -1,3 +1,5 @@
+import {NotificationManager} from 'react-notifications';
+import React from 'react';
 
 
 
@@ -43,5 +45,11 @@ const sendEmail=({email="",content=""}={})=>{
             "Content-Type":"application/json"
         },
         body:JSON.stringify({email,content})
+    }).then(()=>{
+        console.log("Wysłano!")
+        NotificationManager.success("Pomyślnie wysłano","Wysłano");
+    }).catch((err)=>{
+        console.error("Error:",err);
+        NotificationManager.error("Wysyłanie nie powiodło się","Błąd");
     })
 }
