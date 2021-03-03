@@ -3,10 +3,6 @@ import "./describer.scss";
 import utp from "../../Graphics/utp.png";
 
 class Describer extends Component {
-
-  componentDidMount(){
-    console.log("props:",this.props);
-  }
   
   render() {
     return (

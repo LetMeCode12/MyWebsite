@@ -23,15 +23,9 @@ function SliderImage({ imagesPath}) {
         
     }
 
-    useEffect(()=>{
-                
-      
-       
-       console.log("XD",mySlider.current.style.left.slice(1,2))
+    useEffect(()=>{      
        changeSlide = setInterval(moveImages, 5000)
-
        return () => {  clearInterval(changeSlide)}
-   
     })
 
     const onNextImage = () => {
@@ -54,10 +48,6 @@ function SliderImage({ imagesPath}) {
         cnt++;
         changeSlide = setInterval(moveImages, 5000)
     }
-
-    React.useEffect(() => {
-        console.log("Images:", imagesPath)
-    })
 
     const renderImage = (e, index) => {
         return <img className={`myImage ${index}`} src={e} />

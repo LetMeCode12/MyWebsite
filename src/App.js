@@ -23,7 +23,7 @@ import Else from './containers/else/else';
 import Aos from "aos";
 import RightNav from './components/rightNav/rightNav';
 import MailModal from './components/mailModal/mailModal';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {NotificationContainer} from 'react-notifications';
 
 

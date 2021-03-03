@@ -38,7 +38,7 @@ function validateEmail(email) {
 }
 
 const sendEmail=({email="",content=""}={})=>{
-    console.log("Data:",JSON.stringify({email,content}))
+    // console.log("Data:",JSON.stringify({email,content}))
     fetch(`http://${process.env.REACT_APP_API_URL}/sendMail`,{
         method:"POST",
         headers:{
