@@ -32,7 +32,7 @@ function App() {
 
   useEffect(()=>{
     Aos.init({
-      offset:300,
+      offset:250,
       duration:1000
     })
   })
