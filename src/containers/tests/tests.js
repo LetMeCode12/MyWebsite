@@ -1,4 +1,4 @@
-import "../tests/tests.scss"
+import "./tests.scss"
 import logoMocha from "../../Graphics/mocha.png"
 import logoCypress from "../../Graphics/cypress.png"
 

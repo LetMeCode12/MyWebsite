@@ -1,4 +1,4 @@
-import "../myTextArea/myTextArea.scss"
+import "./myTextArea.scss"
 
 export default function MyTestArea (props) {
     const {field,form:{touched,errors}} = props;

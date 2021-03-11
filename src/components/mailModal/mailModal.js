@@ -1,6 +1,6 @@
 import { Modal, ModalBody, ModalFooter, Button } from "react-bootstrap";
 import ModalHeader from "react-bootstrap/esm/ModalHeader";
-import EmailForm from "../Forms/emailForm/EmailForm";
+import EmailForm from "../forms/emailForm/emailForm";
 import "../mailModal/mailModal.scss"
 
 

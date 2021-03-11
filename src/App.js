@@ -1,28 +1,28 @@
 import './App.scss';
-import MyNavBar from './components/navBar/myNavBar';
-import SliderImage from './components/sliderImage/sliderImage';
-import Footer from "./components/footer/footer";
-import Describer from './containers/Describer/describer';
+import MyNavBar from './Components/navBar/myNavBar';
+import SliderImage from './Components/sliderImage/sliderImage';
+import Footer from "./Components/footer/footer";
+import Describer from './Containers/describer/describer';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect
 } from "react-router-dom";
-import NotFound from './containers/notFound/notFound';
-import BackEnd from './containers/backEnd/backEnd';
+import NotFound from './Containers/notFound/notFound';
+import BackEnd from './Containers/backEnd/backEnd';
 import ExpressjsLogo from "./Graphics/sliderImages/ExpressjsLogo.png"
 import awsLogo from "./Graphics/sliderImages/awsLogo.png"
 import Reactlogo from "./Graphics/sliderImages/Reactlogo.png"
 import SpringBootLogo from "./Graphics/sliderImages/SpringBootLogo.png"
 import Reduxlogo from "./Graphics/sliderImages/Reduxlogo.png"
-import FrontEnd from './containers/frontEnd/frontEnd';
+import FrontEnd from './Containers/frontEnd/frontEnd';
 import 'aos/dist/aos.css'
-import Tests from './containers/tests/tests';
-import Else from './containers/else/else';
+import Tests from './Containers/tests/tests';
+import Else from './Containers/else/else';
 import Aos from "aos";
-import RightNav from './components/rightNav/rightNav';
-import MailModal from './components/mailModal/mailModal';
+import RightNav from './Components/rightNav/rightNav';
+import MailModal from './Components/mailModal/mailModal';
 import { useEffect, useState } from 'react';
 import {NotificationContainer} from 'react-notifications';
 

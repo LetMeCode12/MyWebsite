@@ -1,4 +1,4 @@
-import "../myInput/myInput.scss"
+import "./myInput.scss"
 
 export default function MyInput (props) {
     const {field,form:{touched,errors}} = props;

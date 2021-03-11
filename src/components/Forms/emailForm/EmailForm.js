@@ -1,7 +1,7 @@
 import { Field, Form, Formik } from "formik";
 import MyInput from "../../myInput/myInput";
 import MyTestArea from "../../myTextArea/myTextArea";
-import {validation, submit} from "./EmailFormUtils";
+import {validation, submit} from "./emailFormUtils";
 
 export default function EmailForm(props) {
 

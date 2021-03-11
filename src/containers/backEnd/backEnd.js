@@ -1,4 +1,4 @@
-import "../backEnd/backEnd.scss"
+import "./backEnd.scss"
 import logoExpress from "../../Graphics/sliderImages/ExpressjsLogo.png"
 import SpringBootLogo from "../../Graphics/sliderImages/SpringBootLogo.png"
 import awsLogo from "../../Graphics/sliderImages/awsLogo.png"

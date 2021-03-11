@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import ReactDOM from "react-dom";
-import "../Modal/modal.scss";
+import "./modal.scss";
 
 
 class Modal extends Component {
