@@ -40,7 +40,6 @@ function App() {
   const [modalShow,setModalShow] = useState(false);
 
   
-
   const onHide=()=>{
     setModalShow(false)
   };
