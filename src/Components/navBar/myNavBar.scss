@@ -1,0 +1,55 @@
+$bgColor: linear-gradient(to left,rgba(99, 209, 252, 0.521),rgba(0, 174, 255, 1));
+$txColor: white;
+$hbgColor: rgb(0, 150, 219);
+.myNavBar {
+    * {
+        color: $txColor;
+    }
+    .Title{
+        font-size: 28px;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        .Logo{
+            margin: 0 .7rem 0 0;
+            height: 50px;
+            width: 50px;
+        }
+    }
+    
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: normal !important;
+    font-size: larger;
+    background: $bgColor !important;
+    .dropdown-menu {
+        background: $bgColor !important;
+
+        .dropdown-item {
+            color: $txColor !important;
+            &:hover {
+                background: $hbgColor !important;
+                .Underline {
+                    width: min-content;
+                }
+            }
+        }
+    }
+
+    .nav-link {
+        color: $txColor !important;
+        &:hover {
+            background-color: $hbgColor !important;
+            .Underline {
+                width: min-content;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .dropDown > a {
+        display: flex !important;
+        align-items: center !important;
+    }
+}

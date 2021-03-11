@@ -1,0 +1,13 @@
+.Modal{
+    position: absolute;
+    background-color:white ;
+    border: solid 1px black;
+    box-shadow: 0 0 20px black;
+    top:50%;
+    left:50%;
+    z-index: 999999;
+    width:20vw;
+    height: 50vh;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
