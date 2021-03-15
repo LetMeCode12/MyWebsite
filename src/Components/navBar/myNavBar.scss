@@ -1,10 +1,8 @@
-$bgColor: linear-gradient(to left,rgba(99, 209, 252, 0.521),rgba(0, 174, 255, 1));
 $txColor: white;
-$hbgColor: rgb(0, 150, 219);
 
 :root{
-    --bgColor:$bgColor;
-    --hbgColor:$hbgColor;
+    --bgColor:linear-gradient(to left,rgba(99, 209, 252, 0.521),rgba(0, 174, 255, 1));
+    --hbgColor:rgb(0, 150, 219);
 }
 
 .myNavBar {

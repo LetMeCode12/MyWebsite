@@ -22,7 +22,6 @@ function MyNavBar(props) {
     }
 
     useEffect(()=>{
-        setRelative();
         window.onscroll=()=>{
             if(window.scrollY>300){
                   setSticky(); 
