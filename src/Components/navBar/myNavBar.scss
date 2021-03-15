@@ -1,6 +1,12 @@
 $bgColor: linear-gradient(to left,rgba(99, 209, 252, 0.521),rgba(0, 174, 255, 1));
 $txColor: white;
 $hbgColor: rgb(0, 150, 219);
+
+:root{
+    --bgColor:$bgColor;
+    --hbgColor:$hbgColor;
+}
+
 .myNavBar {
     * {
         color: $txColor;
@@ -22,14 +28,15 @@ $hbgColor: rgb(0, 150, 219);
     z-index: 999;
     font-family: normal !important;
     font-size: larger;
-    background: $bgColor !important;
+    background: var(--bgColor) ;
     .dropdown-menu {
-        background: $bgColor !important;
-
+        margin-top: 1rem !important;
+        background: var(--bgColor) !important;
+            
         .dropdown-item {
             color: $txColor !important;
             &:hover {
-                background: $hbgColor !important;
+                background: var(--hbgColor) !important;
                 .Underline {
                     width: min-content;
                 }
@@ -40,7 +47,7 @@ $hbgColor: rgb(0, 150, 219);
     .nav-link {
         color: $txColor !important;
         &:hover {
-            background-color: $hbgColor !important;
+            background-color: var(--hbgColor) !important;
             .Underline {
                 width: min-content;
                 white-space: nowrap;
